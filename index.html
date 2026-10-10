@@ -221,34 +221,43 @@
 }
 
 
+
+
+
+
 #hero-grid2 {
-    gap:20px;
     display: flex;
-    justify-content:center;
+    justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    max-width: 1300px;
+    margin: 0 auto;
+    gap: 50px;
+    padding: 40px 20px;
 }
 
+.about-images {
+    display: flex;
+    gap: 20px;
+}
 
 #hero-grid2 img {
-    width: 100%;
-    max-width:200px;
-    height: 200px;
+    width: 200px;
+    height: 250px;
     object-fit: cover;
     border-radius: 15px;
-   
     transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
+#section {
+    flex: 1;
+    padding: 20px;
+}
 
 #hero-grid2 img:hover {
     transform: translateY(-10px) scale(1.03); 
     box-shadow: 0 12px 25px rgba(214, 107, 145, 0.3); 
 }
- #section{
 
-padding: 20px;
-    }
     #section h3{
          color: #d66b91;
          margin-bottom: 10px;
@@ -835,6 +844,7 @@ footer .footer-bottom p {
         </section>
         <section id="about" class="hero-section2">
            <div id="hero-grid2">
+               <div class="about-images">
             <img src="hair.jpg" alt="hair">
             <img src="hair2.jpg" alt="hair2"></div>
             <div id="section">
