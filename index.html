@@ -609,23 +609,41 @@ form {
     width: 100%;
     padding-top: 25px;
     margin-top: 30px;
-    border-top: 1px solid rgba(255, 255, 255, 0.12); /* Clean subtle border line */
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
 }
 
-/* Explicit selector to override #services p rule */
+
 footer .footer-bottom p {
     color: #888888;
     font-size: 0.85rem;
     margin: 0 !important;
     padding: 0 !important;
-    text-align: center !important; /* Force text center alignment */
+    text-align: center !important; 
 }
         @media (max-width: 900px) {
+          
             .sub-container {
-                padding: 15px 20px;
-                height: auto;
-                flex-direction: column;
-            }
+        padding: 15px 20px;
+        height: auto;
+        flex-direction: column;
+        gap: 15px; 
+    }
+
+    .sub-container h3 {
+        font-size: 24px; 
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px; 
+    }
+
+    nav a {
+        padding: 6px 10px;
+        font-size: 14px;
+    }
 
             .hero-section {
                 padding: 30px 20px;
